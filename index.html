@@ -3,13 +3,22 @@
 .checkbox-xl .custom-control-label::before, 
 .checkbox-xl .custom-control-label::after {
   top: 1.2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .checkbox-xl .custom-control-label {
   padding-top: 23px;
   padding-left: 10px;
+  padding-left: 5.5rem!important;
+}
+
+.custom-control{
+  padding-left: 5.5rem!important;
+}
+
+.checkbLabels{
+  text-align: center;
 }
 </style>
 <html>
@@ -27,19 +36,36 @@
 		  <div class="form-group">
 		    <label for="exampleInputEmail1">Did return</label>
 		  </div>
-		  <div class="custom-control custom-checkbox checkbox-xl">
-			  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Key" value="Key" checked>
-			  <label class="custom-control-label" for="Key">Key</label>
+		  <div class="row checkbLabels">
+		  		<div class="col-4 "><h2></h2>Key</div>
+		  		<div class="col-4"><h2></h2>Rabbit</div>
+		  		<div class="col-4"><h2></h2>Cord</div>
 		  </div>
-		  <div class="custom-control custom-checkbox checkbox-xl">
-			  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Rabbit" value="Rabbit" checked>
-			  <label class="custom-control-label" for="Rabbit">Rabbit</label>
+		  <div class="row ">
+		  	<div class="col-4">
+			  <div class="custom-control custom-checkbox checkbox-xl checkbLabels">
+				  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Key" value="Key" checked>
+				   <label class="custom-control-label" for="Key"></label>
+			  </div>		  		
+		  	</div>
+		  	<div class="col-4">
+			  <div class="custom-control custom-checkbox checkbox-xl">
+				  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Rabbit" value="Rabbit" checked>
+				  <label class="custom-control-label" for="Rabbit"></label>
+			  </div>				  		
+		  	</div>
+		  	<div class="col-4">
+			  <div class="custom-control custom-checkbox checkbox-xl">
+				  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Cord" value="Cord" checked>
+				  <label class="custom-control-label" for="Cord"></label>
+			  </div>			  		
+		  	</div>
 		  </div>	
-		  <div class="custom-control custom-checkbox checkbox-xl">
-			  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Cord" value="Cord" checked>
-			  <label class="custom-control-label" for="Cord">Cord</label>
-		  </div>			  	  
-		  <button type="submit" class="btn btn-primary">Submit</button>
+			<div class="row">
+				<div class="col-12">
+					  <button type="submit" class="btn btn-primary">Submit</button>		
+				</div>
+			</div>		  	  	  
 		</form>		
 	</div>
 
