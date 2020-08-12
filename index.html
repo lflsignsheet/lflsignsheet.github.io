@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <style type="text/css">
-.checkbox-xl .custom-control-label::before, 
-.checkbox-xl .custom-control-label::after {
-  top: 1.2rem;
-  width: 10rem;
-  height: 10rem;
+
+
+.custom-checkbox {
+	text-align: center;
+}
+.custom-checkbox input{
+  width: 8rem;
+  height: 8rem;
 }
 
-.checkbox-xl .custom-control-label {
-  padding-top: 23px;
-  padding-left: 10px;
-  padding-left: 5.5rem!important;
+.submitBtn{
+	width: 100%;
 }
 
-.custom-control{
-  padding-left: 5.5rem!important;
+.signForm{
+ padding-top: 5%;
+ text-align: center;	
 }
 
-.checkbLabels{
-  text-align: center;
-}
+
 </style>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Sign In Sheet</title>
+	<title>Sign Form</title>
 </head>
 <body>
 	<div class="container">
-		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_GauDUxovVKwPofUPElnr1PDry98AWuOYkxEsTz5RmWQgCA/formResponse" method="post">
+		<form class="signForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_GauDUxovVKwPofUPElnr1PDry98AWuOYkxEsTz5RmWQgCA/formResponse" method="post">
+		<h1>Sign Form</h1>
+		<hr>				
 		  <div class="form-group">
-		    <label for="exampleInputEmail1">Name</label>
+		  	<h4>Name</h4>
 		    <input class="form-control" type="text" name="entry.1527221534">
 		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Did return</label>
-		  </div>
+		  <hr>
 		  <div class="row checkbLabels">
-		  		<div class="col-4 "><h2></h2>Key</div>
-		  		<div class="col-4"><h2></h2>Rabbit</div>
-		  		<div class="col-4"><h2></h2>Cord</div>
+		  		<div class="col-3 "><h4>Key</h4></div>
+		  		<div class="col-3"><h4>Rabbit</h4></div>
+		  		<div class="col-3"><h4>Cord</h4></div>
+		  		<div class="col-3"><h4>Mentor</h4></div>
 		  </div>
-		  <div class="row ">
+
+		<div class="row ">
+		  	<div class="col-3">
+				<div class="form-check custom-checkbox">
+				  <input class="form-check-input position-static " name="entry.529660380" type="checkbox" id="Key" value="Key" aria-label="..." checked>
+				</div>			  	  		
+		  	</div>
+		  	<div class="col-3">
+				<div class="form-check custom-checkbox">
+				  <input class="form-check-input position-static " name="entry.529660380" type="checkbox" id="Rabbit" value="Rabbit" aria-label="..." checked>
+				</div>					  		
+		  	</div>
+		  	<div class="col-3">
+				<div class="form-check custom-checkbox">
+				  <input class="form-check-input position-static" name="entry.529660380" type="checkbox" id="Cord" value="Cord" aria-label="..." checked>
+				</div>				  		  		
+		  	</div>
+		  	<div class="col-3">
+				<div class="form-check custom-checkbox">
+				  <input class="form-check-input position-static" name="entry.529660380" type="checkbox" id="Mentor" value="Mentor" aria-label="..." checked>
+				</div>				  		  		
+		  	</div>		  	
+		  </div>
+		  <hr>
+		  <div class="form-group">
+		  	<h4>Notes</h4>
+		    <input class="form-control" type="text" name="entry.1527221534">
+		  </div>		  		  
+
+
+		<!--  <div class="row ">
 		  	<div class="col-4">
 			  <div class="custom-control custom-checkbox checkbox-xl checkbLabels">
 				  <input type="checkbox" class="custom-control-input" name="entry.529660380" id="Key" value="Key" checked>
@@ -62,11 +93,11 @@
 				  <label class="custom-control-label" for="Cord"></label>
 			  </div>			  		
 		  	</div>
-		  </div>	
-		  
+		  </div>	-->
+		  	<hr>
 			<div class="row">
 				<div class="col-12">
-					  <button type="submit" class="btn btn-primary">Submit</button>		
+					  <button type="submit" class="btn btn-primary submitBtn">Submit</button>		
 				</div>
 			</div>		  	  	  
 		</form>		
